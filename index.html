@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="description"
+        content="Gunawan David Portfolio - Front-End Web Developer specializing in HTML, CSS, JavaScript and React.">
+
+    <title>Modern Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/background.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+                David<span>.</span>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <div class="background">
+
+        <!-- Canvas  -->
+        <canvas id="bgCanvas"></canvas>
+
+        <div class="moon-container">
+
+            <div class="moon-glow"></div>
+            <div class="moon-ring"></div>
+
+            <div class="moon">
+                <div class="mare mare1"></div>
+                <div class="mare mare2"></div>
+                <div class="mare mare3"></div>
+                <div class="mare mare4"></div>
+                <div class="mare mare5"></div>
+            </div>
+
+        </div>
+
+
+        <!-- Atmosphere -->
+        <div class="top-light"></div>
+        <div class="bottom-shadow"></div>
+
+        <!-- Vignette -->
+        <div class="gradient-light"></div>
+
+    </div>
+
+
+
+
+    <!--  ============= HERO =================== -->
+
+    <section id="home" class="hero">
+
+        <div class="container">
+            <div class="hero-content">
+
+                <h3 class="animate-title">
+                    Hello, I'm
+                </h3>
+                <h1 class="animate-title">
+                    Gunawan <br>
+                    David
+                </h1>
+                <h2 class="animate-title">
+                    Front-End
+                    <span>Web Developer</span>
+                </h2>
+                <p class="animate-title">
+                    I build beautiful, responsive, and modern websites.
+                </p>
+
+                <div class="hero-button animate-button">
+                    <a href="CV.pdf" class="btn-download" download>
+                        Download CV
+                    </a>
+
+                    <a href="#contact" class="btn-contact">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="hero-image">
+                <img class="profile-image" src="Foto.jpg" alt="Foto Gunawan David" loading="lazy">
+            </div>
+        </div>
+
+    </section>
+
+
+<!--  =========================== ABOUT ========================= -->
+
+<section id="about" class="about">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
+
+        <p class="about-text">
+
+            Hello, My Name David, I am a Software Developer with 
+            more than  15 years of experience developing
+            manufacturing information systems,
+            including HR, Payroll, Finance,
+            Inventory, Production,
+            General Ledger, and Sales Distribution.
+
+            Currently, I am expanding my expertise in
+            Front-End Web Development using
+            HTML, CSS, JavaScript, and React.
+
+        </p>
+
+        <div class="about-stats">
+            <div class="stat-card">
+                <h3>15+</h3>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>20+</h3>
+                <p>Systems Developed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>10+</h3>
+                <p>Technologies</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!--==================================================
+SKILLS
+===================================================-->
+
+<section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title">
+            My <span>Technical Skills</span>
+        </h2>
+        <p class="section-subtitle">
+            Click one of the cards to explore each technology.
+        </p>
+        <div class="skills-wrapper">
+
+            <!--==================================
+                        LEFT PANEL
+            ===================================-->
+            
+            <div class="skills-menu">
+            
+                <div class="skill-card active" id="cardHTML">
+                    <i class="fa-brands fa-html5 html-icon"></i>
+                    <h3>HTML</h3>
+                </div>
+            
+                <div class="skill-card" id="cardCSS">
+                    <i class="fa-brands fa-css3-alt css-icon"></i>
+                    <h3>CSS</h3>
+                </div>
+            
+                <div class="skill-card" id="cardJS">
+                    <i class="fa-brands fa-js js-icon"></i>
+                    <h3>JavaScript</h3>
+                </div>
+            
+                <div class="skill-card" id="cardDOM">
+                    <i class="fa-solid fa-code dom-icon"></i>
+                    <h3>DOM</h3>
+                </div>
+
+                <div class="skill-card" id="cardReact">
+                    <i class="fa-brands fa-react react-icon"></i>
+                    <h3>React</h3>
+                </div>
+            
+                <div class="skill-card" id="cardDatabase">
+                    <i class="fa-solid fa-database database-icon"></i>
+                    <h3>Database</h3>
+                </div>
+            
+                <div class="skill-card" id="cardGit">
+                    <i class="fa-brands fa-git-alt git-icon"></i>
+                    <h3>Git / GitHub</h3>
+                </div>
+            
+            </div>
+
+    
+
+
+            <!--==================================
+                             RIGHT PANEL
+            ===================================-->
+            <div class="skill-screen">
+                <div class="skill-header">
+                    <h2 id="skillTitle">
+                        HTML Explorer
+                    </h2>
+            
+                    <p id="skillDescription">
+                        Explore the most important HTML elements used in modern web development.
+                    </p>
+            
+                    <!-- Glow Divider -->
+                    <div class="skill-divider"></div>
+            
+                </div>
+            
+                <!-- Area Animasi -->
+                <div class="skill-animation">
+            
+                    <canvas id="skillCanvas"></canvas>
+            
+                </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Projects</h2>
+            <p>
+                A selection of business systems and web applications
+                I have developed throughout my professional career.
+            </p>
+        </div>
+
+        <div class="project-header">
+            <div>Icon</div>
+            <div>Project</div>
+            <div>Description</div>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-row">
+
+                <div class="project-icon ledger">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+
+                <div class="project-title">
+                    General Ledger System
+                </div>
+
+                <div class="project-description">
+                    Financial accounting, journal management, trial balance,
+                    profit & loss, and balance sheet reporting.
+                </div>
+
+            </div>
+
+            <!-- Project 2 -->
+
+            <div class="project-row">
+
+                <div class="project-icon hr">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div class="project-title">
+                    HR & Payroll System
+                </div>
+
+                <div class="project-description">
+                    Employee management, attendance tracking,
+                    payroll processing, overtime calculation,
+                    leave management, and HR reporting.
+                </div>
+
+            </div>
+
+            <!-- Project 3 -->
+
+            <div class="project-row">
+
+                <div class="project-icon production">
+                    <i class="fa-solid fa-industry"></i>
+                </div>
+
+                <div class="project-title">
+                    Production & Inventory System
+                </div>
+
+                <div class="project-description">
+                    Manufacturing planning,
+                    Bill of Materials (BOM),
+                    production control,
+                    warehouse operations,
+                    stock management,
+                    and inventory reporting.
+                </div>
+
+            </div>
+
+            <!-- Project 4 -->
+
+            <div class="project-row">
+
+                <div class="project-icon sales">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+
+                <div class="project-title">
+                    Sales & Distribution System
+                </div>
+
+                <div class="project-description">
+                    Sales order processing,
+                    delivery management,
+                    customer database,
+                    invoicing,
+                    and sales reporting.
+                </div>
+
+            </div>
+
+            <!-- Project 5 -->
+
+            <div class="project-row">
+
+                <div class="project-icon accounting">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                </div>
+
+                <div class="project-title">
+                    Accounts Receivable &
+                    Accounts Payable
+                </div>
+
+                <div class="project-description">
+                    Customer receivables,
+                    supplier payables,
+                    payment scheduling,
+                    aging reports,
+                    and financial reconciliation.
+                </div>
+
+            </div>
+
+            <!-- Project 6 -->
+
+            <div class="project-row">
+
+                <div class="project-icon portfolio">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <div class="project-title">
+                    Portfolio Website
+                </div>
+
+                <div class="project-description">
+                    Responsive website built with HTML5,
+                    CSS3, JavaScript,
+                    GSAP animation,
+                    and modern UI design.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+    <div class="container">
+
+        <h2>Contact</h2>
+
+        <p>
+            <a href="mailto:dav_13062000@yahoo.com">
+                dav_13062000@yahoo.com
+            </a>
+        </p>
+
+        <p>
+            <a href="https://wa.me/62811378356" target="_blank">
+                WhatsApp
+            </a>
+        </p>
+
+        <br>
+
+        <form>
+
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit"> Send Message </button>
+
+        </form>
+    </div>
+</section>
+
+    <!-- ================= FOOTER ================= -->
+    
+    <footer>
+        <p>
+            © 2026 Gunawan David. All Rights Reserved.
+        </p>
+    </footer>
+                    
+                    
+                    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"> </script>
+    
+    <script src="js/background.js"></script>
+    <script src="js/stars.js"></script>
+    <script src="js/meteor.js"></script>
+    <script src="js/nebula.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/crater.js"></script>
+
+    <script src="js/skills.js"></script>
+    <script src="js/skillExplorer.js"></script>
+    <script src="js/skillCanvas.js"></script>
+ 
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
