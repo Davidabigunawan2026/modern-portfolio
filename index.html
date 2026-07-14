@@ -302,8 +302,9 @@ SKILLS
         <div class="projects-grid">
 
             <!-- Project 1 -->
-            <div class="project-row">
 
+            <div class="project-row" id="generalLedger"> 
+            
                 <div class="project-icon ledger">
                     <i class="fa-solid fa-chart-column"></i>
                 </div>
@@ -318,6 +319,9 @@ SKILLS
                 </div>
 
             </div>
+
+
+
 
             <!-- Project 2 -->
 
@@ -436,6 +440,95 @@ SKILLS
 
 
 
+<!--==================================================
+PROJECT VIEWER
+===================================================-->
+
+<div id="projectViewer" class="project-viewer">
+    <div class="viewer-window">
+
+        <!-- Header -->
+        <div class="viewer-header">
+
+            <h2 id="viewerTitle">
+                Project Viewer
+            </h2>
+
+            <button id="viewerClose">
+                &times;
+            </button>
+
+        </div>
+
+        <!-- Body -->
+        <div class="viewer-body">
+    
+            <!-- Overview -->
+
+            <div class="viewer-section">
+
+                <h3>Overview</h3>
+
+                <p>
+                    Enterprise Accounting System designed for manufacturing
+                    companies to manage financial transactions,
+                    journals, trial balance, balance sheet,
+                    and income statement reporting.
+                </p>
+
+            </div>
+
+
+            <!-- Modules -->
+            <div class="viewer-section">
+
+                <h3>Modules</h3>
+
+                <ul class="viewer-modules">
+
+                    <li>✔ Chart of Accounts</li>
+                    <li>✔ Journal Voucher</li>
+                    <li>✔ Trial Balance</li>
+                    <li>✔ Balance Sheet</li>
+                    <li>✔ Income Statement</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Technology -->
+
+            <div class="viewer-section">
+
+                <h3>Technologies</h3>
+                <div class="viewer-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+
+            <!-- Report Preview -->
+            <div class="viewer-section">
+                <h3>Report Preview</h3>
+                <div class="report-preview">
+                    Balance Sheet Preview
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+
+
 
 <!-- ================= CONTACT ================= -->
 
@@ -492,7 +585,9 @@ SKILLS
     <script src="js/skills.js"></script>
     <script src="js/skillExplorer.js"></script>
     <script src="js/skillCanvas.js"></script>
- 
+
+    <script src="js/projectViewer.js"></script>
+
     <script src="js/main.js"></script>
 
 </body>
