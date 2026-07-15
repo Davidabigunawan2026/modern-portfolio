@@ -1,0 +1,287 @@
+/*==================================================
+MOBILE RESPONSIVE
+Gunawan Brothers Portfolio
+==================================================*/
+
+@media screen and (max-width:768px){
+
+/*=========================================
+GLOBAL
+=========================================*/
+
+html{
+
+    font-size:14px;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+.container{
+
+    width:94%;
+    margin:auto;
+
+}
+
+
+/*=========================================
+NAVBAR
+=========================================*/
+
+nav{
+
+    padding:15px 20px;
+
+}
+
+.logo{
+
+    font-size:1.3rem;
+
+}
+
+.nav-links{
+
+    display:none;
+
+}
+
+
+/*=========================================
+HERO
+=========================================*/
+
+.hero{
+
+    min-height:auto;
+    padding:120px 0 60px;
+
+}
+
+.hero .container{
+
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    gap:40px;
+
+}
+
+.hero-content{
+
+    width:100%;
+    text-align:center;
+
+}
+
+.hero-content h1{
+
+    font-size:2.5rem;
+
+}
+
+.hero-content h2{
+
+    font-size:1.3rem;
+
+}
+
+.hero-content p{
+
+    font-size:1rem;
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+.hero-image{
+
+    width:100%;
+    display:flex;
+    justify-content:center;
+
+}
+
+.profile-image{
+
+    width:240px;
+    max-width:80%;
+
+}
+
+
+/*=========================================
+ABOUT
+=========================================*/
+
+.about-grid{
+
+    display:block;
+
+}
+
+.about-image{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.about-content{
+
+    text-align:center;
+
+}
+
+
+/*=========================================
+SKILLS
+=========================================*/
+
+.skills-grid{
+
+    display:block;
+
+}
+
+.skill-menu{
+
+    width:100%;
+    margin-bottom:25px;
+
+}
+
+.skill-viewer{
+
+    width:100%;
+
+}
+
+#skillCanvas{
+
+    height:300px;
+
+}
+
+
+/*=========================================
+PROJECT
+=========================================*/
+
+.project-row{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+
+}
+
+.project-icon{
+
+    margin-bottom:10px;
+
+}
+
+
+/*=========================================
+PROJECT VIEWER
+=========================================*/
+
+.viewer{
+
+    width:96%;
+    height:92%;
+
+}
+
+.viewer-header{
+
+    padding:20px;
+
+}
+
+.viewer-header h2{
+
+    font-size:2rem;
+
+}
+
+.viewer-body{
+
+    padding:20px;
+
+}
+
+.viewer-content{
+
+    display:block;
+
+}
+
+.viewer-left{
+
+    width:100%;
+    margin-bottom:30px;
+
+}
+
+.viewer-right{
+
+    width:100%;
+
+}
+
+.viewer-modules li{
+
+    margin-bottom:10px;
+
+}
+
+#reportPreview img{
+
+    width:100%;
+    height:auto;
+    border-radius:10px;
+
+}
+
+
+/*=========================================
+CONTACT
+=========================================*/
+
+.contact-grid{
+
+    display:block;
+
+}
+
+.contact-info{
+
+    margin-bottom:30px;
+
+}
+
+
+/*=========================================
+FOOTER
+=========================================*/
+
+footer{
+
+    text-align:center;
+
+}
+
+}

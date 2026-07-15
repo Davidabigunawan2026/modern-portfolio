@@ -48,7 +48,7 @@ modules.forEach(item=>{
         if(report==="coa"){
             reportPreview.innerHTML = `
                 <img
-                    src="images/ChartOfAccount.png"
+                    src="Images/ChartOfAccount.png"
                     alt="Chart Of Account">
             `;
         }
@@ -56,7 +56,7 @@ modules.forEach(item=>{
         else if(report==="journal"){
             reportPreview.innerHTML = `
                 <img
-                    src="images/Journal_Voucher.png"
+                    src="Images/Journal_Voucher.png"
                     alt="Journal Voucher">
             `;
         }
@@ -64,7 +64,7 @@ modules.forEach(item=>{
         else if(report==="ledger"){
             reportPreview.innerHTML = `
                 <img
-                    src="images/General_Ledger.png"
+                    src="Images/General_Ledger.png"
                     alt="General Ledger">
             `;
         }
@@ -72,21 +72,21 @@ modules.forEach(item=>{
         else if(report==="trial"){
             reportPreview.innerHTML = `
                 <img
-                    src="images/Trial_Balance.png"
+                    src="Images/Trial_Balance.png"
                     alt="Trial Balance">
             `;
         }
 
         else if(report==="income"){
             reportPreview.innerHTML=`
-                <img src="images/Income_Statement.png"
+                <img src="Images/Income_Statement.png"
                     alt="Income Statement">
             `;
         }
 
         else if(report==="balance"){
             reportPreview.innerHTML=`
-                <img src="images/Balance_Sheet.png"
+                <img src="Images/Balance_Sheet.png"
                     alt="Balance Sheet">
             `;
         }
@@ -142,7 +142,7 @@ function bindHRModules(){
             if(item.dataset.report==="hrFeature"){
                 reportPreview.innerHTML=`
                     <img
-                        src="images/HR_Feature.png"
+                        src="Images/HR_Feature.png"
                         alt="HR Feature">
                 `;
             }
@@ -150,7 +150,7 @@ function bindHRModules(){
             else if(item.dataset.report==="hrReport"){
                 reportPreview.innerHTML=`
                     <img
-                        src="images/HR_ReportList.png"
+                        src="Images/HR_ReportList.png"
                         alt="HR Report List">
                 `;
             }
@@ -210,7 +210,7 @@ function bindProductionModules(){
                 case "inventoryFeature":
                     reportPreview.innerHTML=`
                         <img
-                            src="images/IN_Feature.png"
+                            src="Images/IN_Feature.png"
                             alt="Inventory Feature">
                     `;
 
@@ -220,7 +220,7 @@ function bindProductionModules(){
                 case "inventoryReport":
                     reportPreview.innerHTML=`
                         <img
-                            src="images/IN_ReportList.png"
+                            src="Images/IN_ReportList.png"
                             alt="Inventory Report List">
                     `;
 
@@ -229,7 +229,7 @@ function bindProductionModules(){
                 case "productionFeature":
                     reportPreview.innerHTML=`
                         <img
-                            src="images/PRO_Feature.png"
+                            src="Images/PRO_Feature.png"
                             alt="Production Feature">
                     `;
 
@@ -238,7 +238,7 @@ function bindProductionModules(){
                 case "productionReport":
                     reportPreview.innerHTML=`
                         <img
-                            src="images/PRO_ReportList.png"
+                            src="Images/PRO_ReportList.png"
                             alt="Production Report List">
                     `;
                     break;
@@ -293,7 +293,7 @@ function bindSalesModules(){
             if(item.dataset.report==="salesFeature"){
                 reportPreview.innerHTML=`
                     <img
-                        src="images/SAL_Feature.png"
+                        src="Images/SAL_Feature.png"
                         alt="Sales Feature">
                 `;
             }
@@ -301,7 +301,7 @@ function bindSalesModules(){
             else if(item.dataset.report==="salesReport"){
                 reportPreview.innerHTML=`
                     <img
-                        src="images/SAL_ReportList.png"
+                        src="Images/SAL_ReportList.png"
                         alt="Sales Report List">
                 `;
             }
@@ -362,7 +362,7 @@ function bindAccountingModules(){
                 case "arFeature":
                     reportPreview.innerHTML=`
                         <img
-                            src="images/AR_Feature.png"
+                            src="Images/AR_Feature.png"
                             alt="AR Feature">
                     `;
                     break;
@@ -371,7 +371,7 @@ function bindAccountingModules(){
 
                     reportPreview.innerHTML=`
                         <img
-                            src="images/AR_ReportList.png"
+                            src="Images/AR_ReportList.png"
                             alt="AR Report List">
                     `;
                     break;
@@ -380,7 +380,7 @@ function bindAccountingModules(){
 
                     reportPreview.innerHTML=`
                         <img
-                            src="images/AP_Feature.png"
+                            src="Images/AP_Feature.png"
                             alt="AP Feature">
                     `;
                     break;
@@ -389,7 +389,7 @@ function bindAccountingModules(){
 
                     reportPreview.innerHTML=`
                         <img
-                            src="images/AP_ReportList.png"
+                            src="Images/AP_ReportList.png"
                             alt="AP Report List">
                     `;
                     break;

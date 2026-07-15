@@ -2,6 +2,7 @@
 GLOBAL VARIABLES
 ==================================================*/
 
+const isMobile = window.innerWidth <= 768;
 const canvas = document.getElementById("bgCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -27,15 +28,29 @@ let nextMeteorTime = random(METEOR_INTERVAL_MIN, METEOR_INTERVAL_MAX);
 /*==================================================
 INITIALIZE
 ==================================================*/
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
 
-createNebula();
-createStars();
+/*==================================================
+INITIALIZE
+==================================================*/
 
-setSkill("html");
+function init() {
 
-requestAnimationFrame(animate);
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+
+    if (!isMobile) {
+        createNebula();
+    }
+
+    createStars();
+    setSkill("html");
+
+    requestAnimationFrame(animate);
+
+}
+
+init();
+
 
 
 
@@ -83,8 +98,11 @@ function animate(currentTime){
 
     clearCanvas();
 
-    updateNebula(deltaTime);
-    drawNebula();
+    if (!isMobile) {
+        updateNebula(deltaTime);
+        drawNebula();
+    }
+
 
     updateStars(deltaTime);
     drawStars();
