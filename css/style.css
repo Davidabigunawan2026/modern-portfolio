@@ -217,6 +217,7 @@ HERO
 
 
 .hero-content{
+    margin-top: 50px;
     flex:1;
     max-width:620px;
 }
@@ -1035,12 +1036,14 @@ PROJECT VIEWER
 }
 
 
+
+/*  --------------------  LEBAR  WINDOW  PANEL  GL  ------------- */
 .viewer-window{
 
-    width:900px;
-    max-width:90%;
-    min-height:420px;
-    max-height:85vh;
+    width:1400px;
+    max-width:95vw;
+    height:90vh;
+    max-height:90vh;
 
     display:flex;
     flex-direction:column;
@@ -1060,7 +1063,7 @@ PROJECT VIEWER
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 30px;
+    padding:12px 24px;
     color:var(--primary);
     background:rgba(94,234,212,.08);
 
@@ -1071,28 +1074,28 @@ PROJECT VIEWER
 
 .viewer-header h2{
     color:var(--primary);
+    font-size:48px;
+    margin:0;
 }
 
 .viewer-header button{
-
     background:none;
     border:none;
     color:white;
     font-size:30px;
     cursor:pointer;
-
 }
 
 
 .viewer-body{
-
     flex:1;
     overflow-y:auto;
-    padding:35px;
+    padding:22px 30px;
     color:white;
     line-height:1.8;
-
 }
+
+
 
 
 /*=========================================
@@ -1100,38 +1103,20 @@ VIEWER SECTION
 =========================================*/
 
 .viewer-section{
-    margin-bottom:35px;
+    margin-bottom:18px;
 }
 
 .viewer-section h3{
     color:var(--primary);
-    margin-bottom:12px;
+    margin-bottom:6px;
     font-size:22px;
 }
 
 .viewer-section p{
-    line-height:1.8;
+    line-height:1.45;
+    margin-bottom:0;
 }
 
-
-/*=========================================
-MODULES
-=========================================*/
-
-.viewer-modules{
-
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
-    list-style:none;
-
-}
-
-.viewer-modules li{
-
-    color:white;
-
-}
 
 
 /*=========================================
@@ -1157,60 +1142,67 @@ TECH
 }
 
 
+
 /*=========================================
 REPORT PREVIEW
 =========================================*/
 
 .report-preview{
-
-    height:220px;
+    min-height:700px;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
+    background:#fff;
     border-radius:16px;
-    border:1px dashed rgba(94,234,212,.25);
-    background:rgba(255,255,255,.03);
-    color:var(--gray);
-    font-size:20px;
-
+    overflow:auto;
 }
 
 
-.coa-preview{
-
+.report-preview img{
     width:100%;
-    background:white;
-    color:#222;
-    padding:20px;
-    border-radius:12px;
-
+    max-width:100%;
+    height:auto;
+    display:block;
 }
 
-.coa-preview h4{
 
-    text-align:center;
-    margin-bottom:18px;
-    color:#111;
+/*=========================================
+MODULES
+=========================================*/
 
+.viewer-modules li{
+    cursor:pointer;
+    padding:10px 15px;
+    border-radius:10px;
+    transition:.3s;
 }
 
-.coa-table{
-
-    width:100%;
-    border-collapse:collapse;
-
+.viewer-modules li:hover{
+    background:rgba(94,234,212,.12);
+    color:var(--primary);
 }
 
-.coa-table th{
 
-    background:#F3F4F6;
-    padding:12px;
+/*=========================================
+   VIEWER  CONTENT
+=========================================*/
 
+.viewer-content{
+    display:flex;
+    gap:35px;
+    align-items:flex-start;
+    margin-top:10px;
 }
 
-.coa-table td{
-
-    padding:10px;
-    border-bottom:1px solid #DDD;
-
+.viewer-left{
+    width:340px;
+    flex-shrink:0;
+    flex:0 0 320px;
 }
+
+.viewer-right{
+    flex:1;
+    min-width:0;
+}
+
+
