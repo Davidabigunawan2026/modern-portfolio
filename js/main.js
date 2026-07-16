@@ -40,9 +40,11 @@ function init() {
 
     if (!isMobile) {
         createNebula();
+        createStars();
+        createMeteor();
     }
 
-    createStars();
+
     setSkill("html");
 
     requestAnimationFrame(animate);
