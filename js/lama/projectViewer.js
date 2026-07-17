@@ -27,8 +27,6 @@ viewerClose.addEventListener("click",()=>{
 });
 
 
-
-
 const reportPreview =
     document.getElementById("reportPreview");
 
@@ -47,6 +45,7 @@ modules.forEach(item=>{
 
         if(report==="coa"){
             reportPreview.innerHTML = `
+            
                 <img
                     src="Images/ChartOfAccount.png"
                     alt="Chart Of Account">

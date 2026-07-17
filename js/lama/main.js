@@ -28,15 +28,31 @@ let nextMeteorTime = random(METEOR_INTERVAL_MIN, METEOR_INTERVAL_MAX);
 /*==================================================
 INITIALIZE
 ==================================================*/
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
 
-createNebula();
-createStars();
+/*==================================================
+INITIALIZE
+==================================================*/
 
-setSkill("html");
+function init() {
 
-requestAnimationFrame(animate);
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+
+    if (!isMobile) {
+        createNebula();
+        createStars();
+        createMeteor();
+    }
+
+
+    setSkill("html");
+
+    requestAnimationFrame(animate);
+
+}
+
+init();
+
 
 
 
@@ -84,8 +100,11 @@ function animate(currentTime){
 
     clearCanvas();
 
-    updateNebula(deltaTime);
-    drawNebula();
+    if (!isMobile) {
+        updateNebula(deltaTime);
+        drawNebula();
+    }
+
 
     updateStars(deltaTime);
     drawStars();

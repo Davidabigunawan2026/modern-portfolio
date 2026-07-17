@@ -1,0 +1,282 @@
+/*==================================================
+    GLOBAL
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+    background:#050816;
+    color:#FFFFFF;
+
+}
+
+
+/*==================================================
+    HEADER
+==================================================*/
+
+.header{
+
+    text-align:center;
+    padding:40px 20px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    background:#0F172A;
+
+}
+
+.header h1{
+
+    font-size:36px;
+    color:#5EEAD4;
+    margin-bottom:10px;
+
+}
+
+.header p{
+
+    color:#94A3B8;
+    font-size:16px;
+
+}
+
+
+/*==================================================
+    CONTAINER
+==================================================*/
+
+.container{
+
+    width:95%;
+    max-width:1400px;
+    margin:40px auto;
+
+}
+
+
+/*==================================================
+    STAT CARD
+==================================================*/
+
+.stat-card{
+
+    width:280px;
+    background:#111827;
+    border:1px solid rgba(94,234,212,.2);
+    border-radius:16px;
+    padding:25px;
+    margin-bottom:35px;
+    box-shadow:0 0 25px rgba(94,234,212,.08);
+
+}
+
+.stat-card h2{
+
+    color:#94A3B8;
+    font-size:18px;
+
+}
+
+#totalMessage{
+
+    margin-top:15px;
+    font-size:42px;
+    font-weight:bold;
+    color:#5EEAD4;
+
+}
+
+
+/*==================================================
+    MESSAGE PANEL
+==================================================*/
+
+.message-panel{
+
+    background:#111827;
+    border-radius:18px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 0 25px rgba(94,234,212,.08);
+
+}
+
+
+/*==================================================
+    TABLE
+==================================================*/
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#1E293B;
+
+}
+
+thead th{
+
+    color:#5EEAD4;
+    padding:18px;
+    text-align:left;
+    font-size:15px;
+
+}
+
+tbody td{
+
+    padding:16px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    color:#CBD5E1;
+
+}
+
+tbody tr:hover{
+
+    background:#1A2335;
+
+}
+
+
+/*==================================================
+    BUTTON
+==================================================*/
+
+button{
+
+    padding:8px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/*==================================================
+    VIEW BUTTON
+==================================================*/
+
+.btn-view{
+
+    background:#38BDF8;
+    color:white;
+
+}
+
+
+/*==================================================
+    DELETE BUTTON
+==================================================*/
+
+.btn-delete{
+
+    background:#EF4444;
+    color:white;
+
+}
+
+/*==================================================
+    MESSAGE MODAL
+==================================================*/
+
+.modal{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+
+}
+
+
+.modal-content{
+
+    width:550px;
+    max-width:90%;
+    background:#172235;
+    border:1px solid #2F425F;
+    border-radius:16px;
+    padding:30px;
+    color:white;
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.modal-content h2{
+
+    color:#67F2E8;
+    margin-bottom:25px;
+
+}
+
+.modal-content p{
+
+    margin:12px 0;
+    line-height:1.7;
+
+}
+
+.modal-content hr{
+
+    border:none;
+    border-top:1px solid #2F425F;
+    margin:20px 0;
+
+}
+
+
+#modalMessage{
+
+    min-height:150px;
+    white-space:pre-wrap;
+    color:#E4E9F2;
+
+}
+
+#closeModal{
+
+    margin-top:25px;
+    float:right;
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    background:#36AEEF;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+
+#closeModal:hover{
+    background:#2196D3;
+}
+
+
+
