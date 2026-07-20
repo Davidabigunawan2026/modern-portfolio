@@ -1,0 +1,344 @@
+
+
+/*==================================================
+    LAYOUT
+==================================================*/
+
+.container{
+    display:flex;
+    min-height:100vh;
+    background:#F5F7FA;
+}
+
+.content{
+    flex:1;
+    padding:30px;
+}
+
+
+
+
+/*==================================================
+    SIDEBAR
+==================================================*/
+
+.sidebar{
+    width:260px;
+    background:#1F2937;
+    color:#FFFFFF;
+    padding:30px 20px;
+    box-sizing:border-box;
+}
+
+.logo{
+    margin:0;
+    margin-bottom:35px;
+    text-align:center;
+    font-size:24px;
+    border-bottom:1px solid #374151;
+    padding-bottom:20px;
+}
+
+
+.menu{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+
+.sidebar .menu li{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 18px;
+    margin-bottom:10px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:background .3s;
+
+}
+
+.menu li:hover{
+    background:#374151;
+}
+
+.menu li.active{
+    background:#2563EB;
+}
+
+
+
+
+/*==================================================
+    DASHBOARD
+==================================================*/
+
+.dashboard{
+    padding:30px;
+}
+
+.dashboard h1{
+
+    font-size:40px;
+    color:#1F2937;
+    text-align:center;
+    margin-bottom:20px;
+
+}
+
+
+.cards{
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+
+}
+
+
+.card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+
+.card h2{
+    font-size:34px;
+    color:#1a5ddb;
+}
+
+.card h3{
+    color:#1e54c0;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+
+.recent{
+    background:rgb(249, 249, 248);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.recent h2{
+    margin-bottom:20px;
+}
+
+.recent table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+
+.recent th,
+.recent td{
+
+    padding:15px;
+    border-bottom:1px solid #6fd4e2;
+    text-align:left;
+    color:#1F2937;
+
+}
+
+
+.recent th{
+    background:#E5E7EB;
+    color:#111827;
+    font-weight:700;
+}
+
+
+.recent tbody tr:nth-child(even){
+    background:#F9FAFB;
+}
+
+.recent tbody tr:hover{
+    background:#EEF4FF;
+}
+
+
+
+/*==================================================
+    STAT CARD
+==================================================*/
+
+.stat-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.stat-card span{
+    font-size:20px;
+    font-weight:600;
+}
+
+.stat-card strong{
+    font-size:32px;
+    color:#2563EB;
+}
+
+
+/*==================================================
+    TOMBOL VIEW
+==================================================*/
+.btn-view{
+
+    padding:8px 16px;
+    border:none;
+    border-radius:6px;
+    background:#2563EB;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.btn-view:hover{
+
+    background:#1D4ED8;
+
+}
+
+
+/*=========================================
+MESSAGE MODAL  PopUP VIEW
+=========================================*/
+
+.modal-overlay{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+
+}
+
+.modal{
+
+    width:650px;
+    color:#051833;
+     background:rgb(248, 248, 243);
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.modal h2{
+
+    color:#0e1621;
+    text-align:center;
+    margin-bottom:20px;
+
+}
+
+
+.message-box{
+
+    margin-top:15px;
+    padding:20px;
+    border:1px solid #abe6df;
+    min-height:160px;
+    white-space:pre-wrap;
+    border-radius:8px;
+    background:#cceef3;
+    font-size:18px;
+    line-height:1.7;
+
+}
+
+
+.modal-footer{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:25px;
+
+}
+
+
+.btn-close{
+
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:10px 25px;
+    cursor:pointer;
+
+}
+
+.btn-close:hover{
+    background:#1D4ED8;
+}
+
+
+/*====================================
+STATUS BADGE
+====================================*/
+
+.status-read{
+
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    background:#DCFCE7;
+    color:#166534;
+    font-weight:600;
+
+}
+
+.status-unread{
+
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    background:#FEF3C7;
+    color:#B45309;
+    font-weight:600;
+
+}
+
+
+/*====================================
+    TOMBOL  DELETE
+====================================*/
+
+.btn-delete{
+
+    background:#DC2626;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:10px 25px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.btn-delete:hover{
+    background:#B91C1C;
+}
+
+
