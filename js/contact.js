@@ -59,7 +59,7 @@ contactForm.addEventListener("submit", async function (event) {
             alert("❌ Failed to send message.");
         }
 
-        console.log(result);
+        console.log(JSON.stringify(result, null, 2));
 
 
         /*=========================================

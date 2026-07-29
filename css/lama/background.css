@@ -2,8 +2,6 @@
 BACKGROUND
 ==================================================*/
 
-
-
 /*==================================================
 CANVAS
 ==================================================*/
@@ -514,8 +512,8 @@ MOON HIGHLIGHT
     border-radius:50%;
     opacity:.08;
     background:
-    radial-gradient(circle,#555 1px,transparent 2px),
-    radial-gradient(circle,#777 1px,transparent 2px);
+    radial-gradient(circle,#f4f5ec 1px,transparent 2px),
+    radial-gradient(circle,#eeeee7 1px,transparent 2px);
 
     background-size:
     18px 18px,
@@ -536,8 +534,8 @@ MOON HIGHLIGHT
     background:
     radial-gradient(
         circle at 28% 22%,
-        rgba(255,255,255,.40),
-        transparent 42%
+        rgba(224, 225, 215, 0.908),
+        transparent 62%
     );
 
     mix-blend-mode:screen;

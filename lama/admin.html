@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Admin</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/admin.css">
+
+</head>
+
+<body>
+
+    <!--=========================================
+        HEADER
+    ==========================================-->
+
+    <header class="header">
+
+        <h1>
+
+            Portfolio Admin
+
+        </h1>
+
+        <p>
+
+            Contact Message Dashboard
+
+        </p>
+
+    </header>
+
+
+
+    <!--=========================================
+        MAIN
+    ==========================================-->
+
+    <main class="container">
+
+        <!-- Statistic -->
+
+        <section class="stat-card">
+
+            <h2>
+
+                Total Messages
+
+            </h2>
+
+            <div id="totalMessage">
+
+                0
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Message Table -->
+
+        <section class="message-panel">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="messageTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+        <!--=========================================
+            VIEW MESSAGE MODAL
+        =========================================-->
+
+        <div id="messageModal" class="modal">
+
+            <div class="modal-content">
+
+                <h2>Contact Message</h2>
+                <p><strong>Name :</strong> <span id="modalName"></span></p>
+                <p><strong>Phone :</strong> <span id="modalPhone"></span></p>
+                <p><strong>Email :</strong> <span id="modalEmail"></span></p>
+                <hr>
+
+                <p id="modalMessage"></p>
+                <button id="closeModal">
+                    Close
+                </button>
+
+            </div>
+        </div>
+
+
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

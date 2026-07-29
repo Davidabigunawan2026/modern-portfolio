@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Sidebar from "./component/Sidebar";
 import Dashboard from "./pages/Dashboard";
@@ -7,6 +6,8 @@ import Message from "./pages/Messages";
 import { useState } from "react";
 
 
+
+// --------  Menu Utama ------
 function App() {
 
         const [page, setPage] = useState("dashboard");
@@ -20,12 +21,9 @@ function App() {
                 setPage={setPage}
             />
 
-
-
             <main className="content">
 
-                {page === "dashboard" && <Dashboard />}
-                
+                {page === "dashboard" && <Dashboard />}             
                 {page === "message" && <Message />}
 
             </main>

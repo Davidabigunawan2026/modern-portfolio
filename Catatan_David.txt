@@ -1,0 +1,5 @@
+server.js        ---->  node server.js
+portfolio_admin  ---->  npm run dev
+
+Http://localhost:3000   ----> Web Portfolio
+Http://Localhost:5173   ----> Admin + React

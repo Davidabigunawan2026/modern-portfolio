@@ -100,10 +100,10 @@ function animate(currentTime){
 
     clearCanvas();
 
-    if (!isMobile) {
+//    if (!isMobile) {
         updateNebula(deltaTime);
         drawNebula();
-    }
+//    }
 
 
     updateStars(deltaTime);

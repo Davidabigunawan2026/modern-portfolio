@@ -399,3 +399,21 @@ function bindAccountingModules(){
 
 
 
+// ------------------- English Studio --------------------
+const englishStudio =
+document.getElementById("englishStudio");
+//    console.log(englishStudio);
+
+englishStudio.onclick = function(){
+
+//        console.log("Klik English Studio");
+
+    window.open(
+        "https://davidabigunawan2026.github.io/English-Studio/",
+        "_blank"
+    );
+
+};
+
+
+

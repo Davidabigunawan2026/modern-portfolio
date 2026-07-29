@@ -533,7 +533,7 @@ PROJECT ICON COLOR
     background:rgba(250,204,21,.10);
 }
 
-.project-icon.portfolio{
+.project-icon.english{
     color:#C084FC;
     background:rgba(192,132,252,.10);
 }
@@ -913,6 +913,7 @@ footer{
    RESPONSIVE
 ========================================== */
 
+/*
 @media(max-width:992px){
 
     .hero{
@@ -956,6 +957,9 @@ footer{
         padding:80px 8%;
     }
 }
+
+*/
+
 
 @keyframes floatPhoto{
 
@@ -1181,6 +1185,12 @@ MODULES
     background:rgba(94,234,212,.12);
     color:var(--primary);
 }
+
+.viewer-modules li:active{
+    background:rgba(147, 176, 172, 0.12);
+    color:var(--primary);
+}
+
 
 
 /*=========================================
