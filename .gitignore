@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+portfolio_admin/node_modules/
+
+# Build
+dist/
+build/
+
+# Environment
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# SQLite temporary
+*.db-journal
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# Backup folder
+lama/
