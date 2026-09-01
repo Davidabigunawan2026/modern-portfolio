@@ -147,7 +147,7 @@ header{
 
     border-bottom:1px solid rgba(255,255,255,.05);
 
-    z-index:999;
+    z-index:1;
 
 }
 
@@ -242,10 +242,8 @@ HERO
     display:flex;
     justify-content:flex-start;
     align-items:center;
-
     margin-left:-50px;
     margin-top:10px;
-
     transform:translate(30px,30px);
     animation:floatPhoto 5s ease-in-out infinite;
 
@@ -254,20 +252,19 @@ HERO
 .hero-image img{ 
     width:300px; 
     max-width:100%; 
-
     border-radius:0;
     border:none;
-
     box-shadow:none;
-
     transition:transform .4s;
 }
 
 
-
 .hero-image img:hover{
      transform:scale(1.04);
-     }
+}
+
+
+
 
 /*=========================================
 HERO BUTTON
@@ -1158,7 +1155,7 @@ PROJECT VIEWER
     align-items:center;
     background:rgba(0,0,0,.75);
     backdrop-filter:blur(6px);
-    z-index:99999;
+    z-index:1;
 
 }
 
@@ -1358,7 +1355,7 @@ SUCCESS MODAL
     opacity:0;
     visibility:hidden;
     transition:.35s;
-    z-index:9999;
+    z-index:1;
 
 }
 
