@@ -19,7 +19,7 @@ function createMeteor(){
     if(direction === 0){
 
         x = -150;
-        y = Math.random() * height * 0.6;
+        y = Math.random() * height * 0.1;
 
         vx = Math.cos(angle) * speed;
         vy = Math.sin(angle) * speed;
@@ -27,7 +27,7 @@ function createMeteor(){
     }else{
 
         x = width + 150;
-        y = Math.random() * height * 0.6;
+        y = Math.random() * height * 0.3;
 
         vx = -Math.cos(angle) * speed;
         vy = Math.sin(angle) * speed;

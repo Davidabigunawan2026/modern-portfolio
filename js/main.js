@@ -44,8 +44,7 @@ function init() {
         createMeteor();
     }
 
-
-    setSkill("html");
+//    setSkill("html");
 
     requestAnimationFrame(animate);
 
@@ -60,9 +59,6 @@ init();
 SKILL CARD EVENT
 ==================================================*/
 
-document.getElementById("cardHTML").addEventListener("click", () => {
-    setSkill("html");
-});
 
 document.getElementById("cardCSS").addEventListener("click", () => {
     setSkill("css");
@@ -95,6 +91,10 @@ MAIN LOOP
 
 function animate(currentTime){
 
+    if(lastTime === 0){
+        lastTime = currentTime;
+    }
+
     deltaTime = (currentTime - lastTime) / 1000;
     lastTime = currentTime;
 
@@ -112,12 +112,13 @@ function animate(currentTime){
     updateMeteor(deltaTime);
     drawMeteor();
 
-    updateFloatingTags();
-    drawFloatingTags();
+//    updateFloatingTags();
+//    drawFloatingTags();
 
     requestAnimationFrame(animate);
 
 }
+
 
 
 /*==================================================
