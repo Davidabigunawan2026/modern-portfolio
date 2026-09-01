@@ -45,11 +45,10 @@ modules.forEach(item=>{
 
         if(report==="coa"){
             reportPreview.innerHTML = `
-            
                 <img
-                    src="Images/ChartOfAccount.png"
+                    src="Images/COA.png"
                     alt="Chart Of Account">
-            `;
+            `
         }
 
         else if(report==="journal"){
