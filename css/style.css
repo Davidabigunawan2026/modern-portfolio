@@ -24,6 +24,7 @@
 }
 
 
+
 /* ==========================================
    CSS RESET
 ========================================== */
@@ -32,18 +33,16 @@
 
     margin:0;
     padding:0;
-
     box-sizing:border-box;
-
     scroll-behavior:smooth;
 
 }
 
+
 html{
-
     font-size:16px;
-
 }
+
 
 body{
 
@@ -55,6 +54,81 @@ body{
     line-height:1.7;
 
 }
+
+
+/* ==================================================
+   ARROW
+================================================== */
+
+html,
+body {
+    cursor: none;
+}
+
+
+
+.cursor {
+    position: fixed;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 4;
+    transform: translate(-2px, -2px);
+}
+
+
+/* Cursor Bintang putih */
+.cursor::before {
+
+    content: "★";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 10px;
+    line-height: 14px;
+    color: #ede05b;
+
+
+    filter:
+        drop-shadow(
+            0 0 4px rgba(223, 223, 79, 0.8)
+        );
+}
+
+
+/* ==================================================
+   BENANG MELENGKUNG
+================================================== */
+
+.cursor-thread {
+
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 4;
+
+}
+
+
+#threadPath {
+
+    fill: none;
+    stroke: rgba(233, 230, 75, 0.5);
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    filter:
+        drop-shadow(
+            0 0 3px rgba(255,255,255,0.3)
+        );
+}
+
+
 
 
 
@@ -1424,3 +1498,80 @@ SUCCESS MODAL
 .success-box button:hover{
     transform:translateY(-2px);
 }
+
+
+/* ==========================================
+   SKILL CONTENT MODAL
+========================================== */
+
+.skill-content-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+    padding: 20px;
+}
+
+.skill-content-modal.show {
+    display: flex;
+}
+
+.skill-content-box {
+    position: relative;
+    width: min(850px, 95%);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 35px;
+    background: rgba(10, 15, 30, 0.96);
+    border: 1px solid rgba(255, 215, 100, 0.45);
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 30px rgba(255, 215, 100, 0.15),
+        0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.skill-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.skill-content-title {
+    color: #ffd76a;
+    margin-bottom: 15px;
+}
+
+.skill-content-description,
+.skill-content-purpose {
+    color: #d8d8d8;
+    line-height: 1.7;
+}
+
+.skill-content-box h3 {
+    margin-top: 25px;
+    color: #ffd76a;
+}
+
+.skill-content-code {
+    display: block;
+    padding: 20px;
+    margin-top: 10px;
+    background: #080b14;
+    border-radius: 10px;
+    color: #e8e8e8;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-x: auto;
+    white-space: pre;
+}
+
