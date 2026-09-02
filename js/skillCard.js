@@ -46,7 +46,6 @@ cardHTML.addEventListener("click", function(){
     skillProgress.style.width = "90%";            // bawah
     skillLevel.textContent = "HTML5 = 90%";       // bawah
 
-
     skillFeatures.innerHTML = `
         <div class="feature-item">
             <i class="fa-solid fa-code"></i>
@@ -55,7 +54,7 @@ cardHTML.addEventListener("click", function(){
 
         <div class="feature-item">
             <i class="fa-solid fa-layer-group"></i>
-            <span>Page Structure</span>
+            <span>HTML5 Elements</span>
         </div>
 
         <div class="feature-item">
@@ -80,7 +79,85 @@ cardHTML.addEventListener("click", function(){
     `;
 
 
+    // CLICK SEMANTIC HTML
+    const semanticItem =
+        skillFeatures.querySelector(".feature-item");
+
+    semanticItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/curriculum/core/semantic-html/",
+            "_blank"
+        );
+    });
+
+
+    // CLICK HTML5 ELEMENTS
+    const html5Item =
+        skillFeatures.querySelectorAll(".feature-item")[1];
+
+    html5Item.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "_blank"
+        );
+    });
+
+
+    // CLICK LINKS & NAVIGATION
+    const linksItem =
+        skillFeatures.querySelectorAll(".feature-item")[2];
+
+    linksItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a",
+            "_blank"
+        );
+    });
+
+
+    // CLICK IMAGES & MEDIA
+    const imagesMediaItem =
+        skillFeatures.querySelectorAll(".feature-item")[3];
+
+    imagesMediaItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/Media",
+            "_blank"
+        );
+    });
+
+
+    // CLICK FORMS & INPUTS
+    const formsItem =
+        skillFeatures.querySelectorAll(".feature-item")[4];
+
+    formsItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form",
+            "_blank"
+        );
+    });
+
+
+    // CLICK ACCESSIBILITY
+    const accessibilityItem =
+        skillFeatures.querySelectorAll(".feature-item")[5];
+
+    accessibilityItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
+            "_blank"
+        );
+    });
+
+
 });
+
+// ==========================================
+// DEFAULT SKILL
+// ==========================================
+
+cardHTML.click();
 
 
 
@@ -142,8 +219,79 @@ cardCSS.addEventListener("click", function(){
         </div>
     `;
 
-});
+    // CLICK FLEXBOX & GRID
+    const flexboxGridItem =
+        skillFeatures.querySelectorAll(".feature-item")[0];
 
+    flexboxGridItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout",
+            "_blank"
+        );
+    });
+
+
+    // CLICK RESPONSIVE DESIGN
+    const responsiveItem =
+        skillFeatures.querySelectorAll(".feature-item")[1];
+
+    responsiveItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+            "_blank"
+        );
+    });
+
+
+    // CLICK COLORS & TYPOGRAPHY
+    const colorsTypographyItem =
+        skillFeatures.querySelectorAll(".feature-item")[2];
+
+    colorsTypographyItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors",
+            "_blank"
+        );
+    });
+
+
+    // CLICK ANIMATIONS & EFFECTS
+    const animationsItem =
+        skillFeatures.querySelectorAll(".feature-item")[3];
+
+    animationsItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations",
+            "_blank"
+        );
+    });
+
+
+    // CLICK LAYOUTS & POSITIONING
+    const layoutsItem =
+        skillFeatures.querySelectorAll(".feature-item")[4];
+
+    layoutsItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Positioned_layout",
+            "_blank"
+        );
+    });
+
+
+    // CLICK MODERN CSS
+    const modernCSSItem =
+        skillFeatures.querySelectorAll(".feature-item")[5];
+
+    modernCSSItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "_blank"
+        );
+    });
+
+
+});
 
 
 
@@ -211,7 +359,81 @@ cardJS.addEventListener("click", function(){
     `;
 
 
+    // CLICK VARIABLES & DATA TYPES
+    const variablesItem =
+        skillFeatures.querySelectorAll(".feature-item")[0];
+
+    variablesItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables",
+            "_blank"
+        );
+    });
+
+
+    // CLICK FUNCTIONS
+    const functionsItem =
+        skillFeatures.querySelectorAll(".feature-item")[1];
+
+    functionsItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Functions",
+            "_blank"
+        );
+    });
+
+
+    // CLICK EVENTS
+    const eventsItem =
+        skillFeatures.querySelectorAll(".feature-item")[2];
+
+    eventsItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events",
+            "_blank"
+        );
+    });
+
+
+    // CLICK DOM MANIPULATION
+    const domManipulationItem =
+        skillFeatures.querySelectorAll(".feature-item")[3];
+
+    domManipulationItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting",
+            "_blank"
+        );
+    });
+
+
+    // CLICK ARRAYS & OBJECTS
+    const arraysObjectsItem =
+        skillFeatures.querySelectorAll(".feature-item")[4];
+
+    arraysObjectsItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Arrays",
+            "_blank"
+        );
+    });
+
+
+    // CLICK ASYNC JAVASCRIPT
+    const asyncJavaScriptItem =
+        skillFeatures.querySelectorAll(".feature-item")[5];
+
+    asyncJavaScriptItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS/Promises",
+            "_blank"
+        );
+    });
+
+
 });
+
+
 
 
 
@@ -279,8 +501,82 @@ cardDOM.addEventListener("click", function(){
     `;
 
 
+    // CLICK DOM SELECTORS
+    const domSelectorsItem =
+        skillFeatures.querySelectorAll(".feature-item")[0];
+
+    domSelectorsItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Selection_and_traversal_on_the_DOM_tree",
+            "_blank"
+        );
+    });
+
+
+    // CLICK ELEMENT MANIPULATION
+    const elementManipulationItem =
+        skillFeatures.querySelectorAll(".feature-item")[1];
+
+    elementManipulationItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/API/Element",
+            "_blank"
+        );
+    });
+
+
+    // CLICK EVENT HANDLING
+    const eventHandlingItem =
+        skillFeatures.querySelectorAll(".feature-item")[2];
+
+    eventHandlingItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener",
+            "_blank"
+        );
+    });
+
+
+    // CLICK DOM TRAVERSAL
+    const domTraversalItem =
+        skillFeatures.querySelectorAll(".feature-item")[3];
+
+    domTraversalItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Anatomy_of_the_DOM",
+            "_blank"
+        );
+    });
+
+    // CLICK DYNAMIC STYLING
+    const dynamicStylingItem =
+        skillFeatures.querySelectorAll(".feature-item")[4];
+
+    dynamicStylingItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information",
+            "_blank"
+        );
+    });
+
+
+    // CLICK DYNAMIC CONTENT
+    const dynamicContentItem =
+        skillFeatures.querySelectorAll(".feature-item")[5];
+
+    dynamicContentItem.addEventListener("click", function () {
+        window.open(
+            "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting",
+            "_blank"
+        );
+    });
+
+
 
 });
+
+
+
 
 
 
@@ -347,6 +643,82 @@ cardReact.addEventListener("click", function(){
         </div>
     `;
 
+
+    // CLICK COMPONENTS
+    const componentsItem =
+        skillFeatures.querySelectorAll(".feature-item")[0];
+
+    componentsItem.addEventListener("click", function () {
+        window.open(
+            "https://react.dev/learn/your-first-component",
+            "_blank"
+        );
+    });
+
+
+    // CLICK PROPS
+    const propsItem =
+        skillFeatures.querySelectorAll(".feature-item")[1];
+
+    propsItem.addEventListener("click", function () {
+        window.open(
+            "https://react.dev/learn/passing-props-to-a-component",
+            "_blank"
+        );
+    });
+
+
+    // CLICK STATE
+    const stateItem =
+        skillFeatures.querySelectorAll(".feature-item")[2];
+
+    stateItem.addEventListener("click", function () {
+        window.open(
+            "https://react.dev/learn/state-a-components-memory",
+            "_blank"
+        );
+    });
+
+
+    // CLICK HOOKS
+    const hooksItem =
+        skillFeatures.querySelectorAll(".feature-item")[3];
+
+    hooksItem.addEventListener("click", function () {
+        window.open(
+            "https://react.dev/reference/react/hooks",
+            "_blank"
+        );
+    });
+
+
+    // CLICK JSX
+    const jsxItem =
+        skillFeatures.querySelectorAll(".feature-item")[4];
+
+    jsxItem.addEventListener("click", function () {
+        window.open(
+            "https://react.dev/learn/writing-markup-with-jsx",
+            "_blank"
+        );
+    });
+
+
+    // CLICK REUSABLE UI
+    const reusableUIItem =
+        skillFeatures.querySelectorAll(".feature-item")[5];
+
+    reusableUIItem.addEventListener("click", function () {
+
+        window.open(
+            "https://react.dev/learn/importing-and-exporting-components",
+            "_blank"
+        );
+
+    });
+
+
+
 });
 
 
@@ -359,37 +731,12 @@ const cardDatabase = document.getElementById("cardDatabase");
 
 cardDatabase.addEventListener("click", function(){
 
-    // Pindahkan active card
-    skillCards.forEach(card => {
-        card.classList.remove("active");
-    });
-
-    cardDatabase.classList.add("active");
-
-
-    // Ubah isi panel
-    skillTitle.textContent = "Database Development";
-
-    skillSubtitle.textContent =
-        "Database Design & SQL";
-
-    skillDescription.textContent =
-        "Database development involves designing, managing, " +
-        "and working with structured data using database systems.";
-
-    skillPercentage.textContent = "80%";
-    skillProgress.style.width = "80%";
-    skillLevel.textContent = "Database = 80%";
-
-cardDatabase.addEventListener("click", function(){
-
     // Card aktif
     skillCards.forEach(card => {
         card.classList.remove("active");
     });
 
     cardDatabase.classList.add("active");
-
 
     // Header
     skillTitle.textContent = "Database Development";
@@ -444,11 +791,86 @@ cardDatabase.addEventListener("click", function(){
     `;
 
 
-});
+    // CLICK DATABASE DESIGN
+    const databaseDesignItem =
+        skillFeatures.querySelectorAll(".feature-item")[0];
+
+    databaseDesignItem.addEventListener("click", function () {
+
+        window.open(
+            "https://www.postgresql.org/docs/current/ddl.html",
+            "_blank"
+        );
+
+    });
+
+
+    // CLICK TABLES & RELATIONSHIPS
+    const tablesRelationshipsItem =
+        skillFeatures.querySelectorAll(".feature-item")[1];
+
+    tablesRelationshipsItem.addEventListener("click", function () {
+
+        window.open(
+            "https://www.postgresql.org/docs/current/ddl-constraints.html",
+            "_blank"
+        );
+
+    });
+
+
+    // CLICK SQL QUERIES
+    const sqlQueriesItem =
+        skillFeatures.querySelectorAll(".feature-item")[2];
+
+    sqlQueriesItem.addEventListener("click", function () {
+        window.open(
+            "https://www.postgresql.org/docs/current/queries.html",
+            "_blank"
+        );
+    });
+
+
+    // CLICK DATA SEARCHING
+    const dataSearchingItem =
+        skillFeatures.querySelectorAll(".feature-item")[3];
+
+    dataSearchingItem.addEventListener("click", function () {
+        window.open(
+            "https://www.postgresql.org/docs/current/functions-matching.html",
+            "_blank"
+        );
+    });
+
+
+    // CLICK FILTERING & SORTING
+    const filteringSortingItem =
+        skillFeatures.querySelectorAll(".feature-item")[4];
+
+    filteringSortingItem.addEventListener("click", function () {
+        window.open(
+            "https://www.postgresql.org/docs/current/queries-order.html",
+            "_blank"
+        );
+    });
+
+
+    // CLICK QUERY OPTIMIZATION
+    const queryOptimizationItem =
+        skillFeatures.querySelectorAll(".feature-item")[5];
+
+    queryOptimizationItem.addEventListener("click", function () {
+        window.open(
+            "https://www.postgresql.org/docs/current/using-explain.html",
+            "_blank"
+        );
+    });
 
 
 
 });
+
+
 
 
 
@@ -515,6 +937,91 @@ cardGit.addEventListener("click", function(){
             <span>GitHub Repository</span>
         </div>
     `;
+
+    // CLICK VERSION CONTROL
+    const versionControlItem =
+        skillFeatures.querySelectorAll(".feature-item")[0];
+
+    versionControlItem.addEventListener("click", function () {
+
+        window.open(
+            "https://docs.github.com/en/get-started/using-git/about-git",
+            "_blank"
+        );
+
+    });
+
+
+
+    // CLICK COMMITS
+    const commitsItem =
+        skillFeatures.querySelectorAll(".feature-item")[1];
+
+    commitsItem.addEventListener("click", function () {
+
+        window.open(
+            "https://docs.github.com/en/rest/git/commits",
+            "_blank"
+        );
+
+    });
+
+
+
+    // CLICK BRANCHES
+    const branchesItem =
+        skillFeatures.querySelectorAll(".feature-item")[2];
+
+    branchesItem.addEventListener("click", function () {
+
+        window.open(
+            "https://docs.github.com/en/pull-requests/reference/branches",
+            "_blank"
+        );
+
+    });
+
+
+    // CLICK PUSH & PULL
+    const pushPullItem =
+        skillFeatures.querySelectorAll(".feature-item")[3];
+
+    pushPullItem.addEventListener("click", function () {
+
+        window.open(
+            "https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository",
+            "_blank"
+        );
+
+    });
+
+
+    // CLICK MERGE
+    const mergeItem =
+        skillFeatures.querySelectorAll(".feature-item")[4];
+
+    mergeItem.addEventListener("click", function () {
+
+        window.open(
+            "https://docs.github.com/en/get-started/using-git/about-git-subtree-merges",
+            "_blank"
+        );
+
+    });
+
+
+    // CLICK GITHUB REPOSITORY
+    const githubRepositoryItem =
+        skillFeatures.querySelectorAll(".feature-item")[5];
+
+    githubRepositoryItem.addEventListener("click", function () {
+
+        window.open(
+            "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+            "_blank"
+        );
+
+    });
 
 
 
