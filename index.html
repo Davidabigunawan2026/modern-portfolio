@@ -35,6 +35,13 @@
 <!-- ================= BODY ================= -->
 <body>
 
+    <div class="cursor"></div>
+
+    <svg class="cursor-thread">
+        <path id="threadPath"></path>
+    </svg>
+
+
     <header>
 
         <div class="container">
@@ -580,9 +587,7 @@ PROJECT VIEWER
 
 
 
-
 <!-- ================= CONTACT ================= -->
-
 <section id="contact">
     <div class="container">
 
@@ -643,36 +648,64 @@ PROJECT VIEWER
     </div>
 </section>
 
-    <!-- ================= FOOTER ================= -->
-    
-    <footer>
-        <p>
-            © 2026 Gunawan David. All Rights Reserved.
-        </p>
-    </footer>
+
+<!-- ==========================================
+    SKILL CONTENT MODAL
+========================================== -->
+
+<div id="skillContentModal" class="skill-content-modal">
+
+    <div class="skill-content-box">
+
+        <button id="closeSkillModal" class="skill-modal-close">
+            ✕
+        </button>
+
+        <h2 class="skill-content-title">
+            Semantic HTML
+        </h2>
+
+        <p class="skill-content-description"></p>
+        <h3>Example</h3>
+        <pre><code class="skill-content-code"></code></pre>
+        <h3>Purpose</h3>
+        <p class="skill-content-purpose"></p>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>
+        © 2026 Gunawan David. All Rights Reserved.
+    </p>
+</footer>
                     
 
-        <!--=========================================
-            SUCCESS MESSAGE
-        ==========================================-->
+<!--=========================================
+    SUCCESS MESSAGE
+==========================================-->
 
-        <div id="successModal" class="success-modal">
+<div id="successModal" class="success-modal">
 
-            <div class="success-box">
-                <div class="success-icon">
-                    ✓
-                </div>
-                <h2>Thank You!</h2>
-                <p>
-                    Your message has been
-                    successfully submitted.
-                </p>
-
-                <button id="successButton">
-                    Continue
-                </button>
-            </div>
+    <div class="success-box">
+        <div class="success-icon">
+            ✓
         </div>
+        <h2>Thank You!</h2>
+        <p>
+            Your message has been
+            successfully submitted.
+        </p>
+
+        <button id="successButton">
+            Continue
+        </button>
+    </div>
+</div>
                     
                     
     <!-- JavaScript -->
@@ -685,8 +718,8 @@ PROJECT VIEWER
     <script src="js/meteor.js"></script>
     <script src="js/nebula.js"></script>
     <script src="js/gsap.js"></script>
-    <script src="js/crater.js"></script>
 
+    <script src="js/skillContent.js"></script>
     <script src="js/skillCard.js"></script>
 
     <script src="js/projectViewer.js"></script>
