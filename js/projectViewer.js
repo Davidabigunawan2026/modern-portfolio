@@ -415,4 +415,21 @@ englishStudio.onclick = function(){
 };
 
 
+// ------------------- Gunawan Brothers --------------------
+const gunawanBrothers =
+document.getElementById("gunawanBrothers");
+
+gunawanBrothers.onclick = function(){
+
+    window.open(
+        "https://davidabigunawan2026.github.io/Gunawan_Brothers/",
+        "_blank"
+    );
+
+};
+
+
+
+
+
 
