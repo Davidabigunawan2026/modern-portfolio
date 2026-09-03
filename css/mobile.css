@@ -143,6 +143,14 @@ GLOBAL
         box-sizing:border-box;
     }
 
+    .skill-screen {
+        width:100%;
+        max-width:100%;
+        min-width:0;
+        box-sizing:border-box;
+        display:block;
+        position:static;
+    }
 
 
 
