@@ -13,13 +13,59 @@ document.getElementById("viewerClose");
 const generalLedger =
 document.getElementById("generalLedger");
 
+
+// -------------  G/L   di Klik ---------------
 generalLedger.addEventListener("click",()=>{
 
     viewerTitle.textContent =
     "General Ledger System";
+
+    overview.textContent =
+    "Enterprise Accounting System designed for manufacturing companies to manage financial transactions, journals, trial balance, balance sheet, and income statement reporting.";
+
+    // Kembalikan Modules General Ledger
+    moduleList.innerHTML = `
+
+        <li data-report="coa">
+            ✔ Chart of Accounts
+        </li>
+
+        <li data-report="journal">
+            ✔ Journal Voucher
+        </li>
+
+        <li data-report="ledger">
+            ✔ General Ledger
+        </li>
+
+        <li data-report="trial">
+            ✔ Trial Balance
+        </li>
+
+        <li data-report="income">
+            ✔ Income Statement
+        </li>
+
+        <li data-report="balance">
+            ✔ Balance Sheet
+        </li>
+
+    `;
+
+    // Reset preview
+    reportPreview.innerHTML = `
+        <p>Select a module to preview.</p>
+    `;
+
     viewer.classList.add("active");
 
+    // Pasang kembali event Modules G/L
+    bindGeneralLedgerModules();
+
 });
+
+
+
 
 viewerClose.addEventListener("click",()=>{
     viewer.classList.remove("active");
@@ -38,60 +84,86 @@ const moduleList =
 
 
 // ----------------------- General Ledger --------------------------
-modules.forEach(item=>{
 
-    item.addEventListener("click",()=>{
-    const report = item.dataset.report;
+function bindGeneralLedgerModules(){
 
-        if(report==="coa"){
-            reportPreview.innerHTML = `
-                <img
-                    src="Images/COA.png"
-                    alt="Chart Of Account">
-            `
-        }
+    const glModules =
+        document.querySelectorAll(".viewer-modules li");
 
-        else if(report==="journal"){
-            reportPreview.innerHTML = `
-                <img
-                    src="Images/Journal_Voucher.png"
-                    alt="Journal Voucher">
-            `;
-        }
+    glModules.forEach(item=>{
 
-        else if(report==="ledger"){
-            reportPreview.innerHTML = `
-                <img
-                    src="Images/General_Ledger.png"
-                    alt="General Ledger">
-            `;
-        }
+        item.addEventListener("click",()=>{
 
-        else if(report==="trial"){
-            reportPreview.innerHTML = `
-                <img
-                    src="Images/Trial_Balance.png"
-                    alt="Trial Balance">
-            `;
-        }
+            const report = item.dataset.report;
 
-        else if(report==="income"){
-            reportPreview.innerHTML=`
-                <img src="Images/Income_Statement.png"
-                    alt="Income Statement">
-            `;
-        }
+            if(report==="coa"){
 
-        else if(report==="balance"){
-            reportPreview.innerHTML=`
-                <img src="Images/Balance_Sheet.png"
-                    alt="Balance Sheet">
-            `;
-        }
+                reportPreview.innerHTML = `
+                    <img
+                        src="Images/COA.png"
+                        alt="Chart Of Account">
+                `;
 
+            }
+
+            else if(report==="journal"){
+
+                reportPreview.innerHTML = `
+                    <img
+                        src="Images/Journal_Voucher.png"
+                        alt="Journal Voucher">
+                `;
+
+            }
+
+            else if(report==="ledger"){
+
+                reportPreview.innerHTML = `
+                    <img
+                        src="Images/General_Ledger.png"
+                        alt="General Ledger">
+                `;
+
+            }
+
+            else if(report==="trial"){
+
+                reportPreview.innerHTML = `
+                    <img
+                        src="Images/Trial_Balance.png"
+                        alt="Trial Balance">
+                `;
+
+            }
+
+            else if(report==="income"){
+
+                reportPreview.innerHTML = `
+                    <img
+                        src="Images/Income_Statement.png"
+                        alt="Income Statement">
+                `;
+
+            }
+
+            else if(report==="balance"){
+
+                reportPreview.innerHTML = `
+                    <img
+                        src="Images/Balance_Sheet.png"
+                        alt="Balance Sheet">
+                `;
+
+            }
+
+        });
 
     });
-});
+
+}
+
+
+
 
 
 
