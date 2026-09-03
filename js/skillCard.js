@@ -722,7 +722,6 @@ cardReact.addEventListener("click", function(){
 });
 
 
-
 // ==================================================
 // DATABASE DEVELOPMENT
 // ==================================================
@@ -738,17 +737,18 @@ cardDatabase.addEventListener("click", function(){
 
     cardDatabase.classList.add("active");
 
+
     // Header
     skillTitle.textContent = "Database Development";
 
     skillSubtitle.textContent =
-        "Database Design & SQL";
+        "SQLite Database & SQL";
 
 
     // Description
     skillDescription.textContent =
         "Database development focuses on designing, managing, " +
-        "and working with structured data using SQL and database systems.";
+        "and working with structured data using SQLite and SQL.";
 
 
     // Percentage
@@ -798,7 +798,7 @@ cardDatabase.addEventListener("click", function(){
     databaseDesignItem.addEventListener("click", function () {
 
         window.open(
-            "https://www.postgresql.org/docs/current/ddl.html",
+            "https://www.sqlite.org/lang_createtable.html",
             "_blank"
         );
 
@@ -812,7 +812,7 @@ cardDatabase.addEventListener("click", function(){
     tablesRelationshipsItem.addEventListener("click", function () {
 
         window.open(
-            "https://www.postgresql.org/docs/current/ddl-constraints.html",
+            "https://www.sqlite.org/foreignkeys.html",
             "_blank"
         );
 
@@ -824,10 +824,12 @@ cardDatabase.addEventListener("click", function(){
         skillFeatures.querySelectorAll(".feature-item")[2];
 
     sqlQueriesItem.addEventListener("click", function () {
+
         window.open(
-            "https://www.postgresql.org/docs/current/queries.html",
+            "https://www.sqlite.org/lang.html",
             "_blank"
         );
+
     });
 
 
@@ -836,10 +838,12 @@ cardDatabase.addEventListener("click", function(){
         skillFeatures.querySelectorAll(".feature-item")[3];
 
     dataSearchingItem.addEventListener("click", function () {
+
         window.open(
-            "https://www.postgresql.org/docs/current/functions-matching.html",
+            "https://www.sqlite.org/lang_select.html",
             "_blank"
         );
+
     });
 
 
@@ -848,10 +852,12 @@ cardDatabase.addEventListener("click", function(){
         skillFeatures.querySelectorAll(".feature-item")[4];
 
     filteringSortingItem.addEventListener("click", function () {
+
         window.open(
-            "https://www.postgresql.org/docs/current/queries-order.html",
+            "https://www.sqlite.org/lang_select.html#resultset",
             "_blank"
         );
+
     });
 
 
@@ -860,16 +866,15 @@ cardDatabase.addEventListener("click", function(){
         skillFeatures.querySelectorAll(".feature-item")[5];
 
     queryOptimizationItem.addEventListener("click", function () {
+
         window.open(
-            "https://www.postgresql.org/docs/current/using-explain.html",
+            "https://www.sqlite.org/optoverview.html",
             "_blank"
         );
+
     });
 
-
-
 });
-
 
 
 
@@ -938,83 +943,82 @@ cardGit.addEventListener("click", function(){
         </div>
     `;
 
-    // CLICK VERSION CONTROL
-    const versionControlItem =
-        skillFeatures.querySelectorAll(".feature-item")[0];
+        // CLICK VERSION CONTROL
+        const versionControlItem =
+            skillFeatures.querySelectorAll(".feature-item")[0];
 
-    versionControlItem.addEventListener("click", function () {
+        versionControlItem.addEventListener("click", function () {
 
-        window.open(
-            "https://docs.github.com/en/get-started/using-git/about-git",
-            "_blank"
-        );
+            window.open(
+                "https://docs.github.com/en/get-started/using-git/about-git",
+                "_blank"
+            );
 
-    });
-
-
-
-    // CLICK COMMITS
-    const commitsItem =
-        skillFeatures.querySelectorAll(".feature-item")[1];
-
-    commitsItem.addEventListener("click", function () {
-
-        window.open(
-            "https://docs.github.com/en/rest/git/commits",
-            "_blank"
-        );
-
-    });
+        });
 
 
+        // CLICK COMMITS
+        const commitsItem =
+            skillFeatures.querySelectorAll(".feature-item")[1];
 
-    // CLICK BRANCHES
-    const branchesItem =
-        skillFeatures.querySelectorAll(".feature-item")[2];
+        commitsItem.addEventListener("click", function () {
 
-    branchesItem.addEventListener("click", function () {
+            window.open(
+                "https://docs.github.com/en/rest/git/commits",
+                "_blank"
+            );
 
-        window.open(
-            "https://docs.github.com/en/pull-requests/reference/branches",
-            "_blank"
-        );
-
-    });
-
-
-    // CLICK PUSH & PULL
-    const pushPullItem =
-        skillFeatures.querySelectorAll(".feature-item")[3];
-
-    pushPullItem.addEventListener("click", function () {
-
-        window.open(
-            "https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository",
-            "_blank"
-        );
-
-    });
+        });
 
 
-    // CLICK MERGE
-    const mergeItem =
-        skillFeatures.querySelectorAll(".feature-item")[4];
 
-    mergeItem.addEventListener("click", function () {
+        // CLICK BRANCHES
+        const branchesItem =
+            skillFeatures.querySelectorAll(".feature-item")[2];
 
-        window.open(
-            "https://docs.github.com/en/get-started/using-git/about-git-subtree-merges",
-            "_blank"
-        );
+        branchesItem.addEventListener("click", function () {
 
-    });
+            window.open(
+                "https://docs.github.com/en/pull-requests/reference/branches",
+                "_blank"
+            );
+
+        });
 
 
-    // CLICK GITHUB REPOSITORY
-    const githubRepositoryItem =
-        skillFeatures.querySelectorAll(".feature-item")[5];
+        // CLICK PUSH & PULL
+        const pushPullItem =
+            skillFeatures.querySelectorAll(".feature-item")[3];
 
-    githubRepositoryItem.addEventListener("click", function () {
+        pushPullItem.addEventListener("click", function () {
+
+            window.open(
+                "https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository",
+                "_blank"
+            );
+
+        });
+
+
+        // CLICK MERGE
+        const mergeItem =
+            skillFeatures.querySelectorAll(".feature-item")[4];
+
+        mergeItem.addEventListener("click", function () {
+
+            window.open(
+                "https://docs.github.com/en/get-started/using-git/about-git-subtree-merges",
+                "_blank"
+            );
+
+        });
+
+
+        // CLICK GITHUB REPOSITORY
+        const githubRepositoryItem =
+            skillFeatures.querySelectorAll(".feature-item")[5];
+
+        githubRepositoryItem.addEventListener("click", function () {
 
         window.open(
             "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
@@ -1022,6 +1026,331 @@ cardGit.addEventListener("click", function(){
         );
 
     });
+
+
+
+
+    // ==================================================
+    // PYTHON
+    // ==================================================
+
+    const cardPython = document.getElementById("python");
+
+    cardPython.addEventListener("click", function(){
+
+        // Pindahkan active card
+        skillCards.forEach(card => {
+            card.classList.remove("active");
+        });
+
+        cardPython.classList.add("active");
+
+
+        // Ubah isi panel
+        skillTitle.textContent = "Python";
+
+        skillSubtitle.textContent =
+            "Programming & Application Development";
+
+        skillDescription.textContent =
+            "Python is a high-level programming language used " +
+            "for application development, automation, data processing, " +
+            "and many other software development tasks.";
+
+        skillPercentage.textContent = "70%";
+        skillProgress.style.width = "70%";
+        skillLevel.textContent = "Python = 70%";
+
+
+        // Core Skills
+        skillFeatures.innerHTML = `
+            <div class="feature-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Python Syntax</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-gears"></i>
+                <span>Functions</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Database</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-list"></i>
+                <span>List & Dictionary</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Modules</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-desktop"></i>
+                <span>Tkinter GUI</span>
+            </div>
+        `;
+
+
+        // CLICK PYTHON SYNTAX
+        const pythonSyntaxItem =
+            skillFeatures.querySelectorAll(".feature-item")[0];
+
+        pythonSyntaxItem.addEventListener("click", function () {
+
+            window.open(
+                "https://docs.python.org/3/tutorial/index.html",
+                "_blank"
+            );
+
+        });
+
+
+        // CLICK FUNCTIONS
+        const pythonFunctionsItem =
+            skillFeatures.querySelectorAll(".feature-item")[1];
+
+        pythonFunctionsItem.addEventListener("click", function () {
+
+            window.open(
+                "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+                "_blank"
+            );
+
+        });
+
+
+        // CLICK DATABASE
+        const pythonDatabaseItem =
+            skillFeatures.querySelectorAll(".feature-item")[2];
+
+        pythonDatabaseItem.addEventListener("click", function () {
+
+            window.open(
+                "https://docs.python.org/3/library/index.html",
+                "_blank"
+            );
+
+        });
+
+
+        // CLICK LIST & DICTIONARY
+        const pythonDataItem =
+            skillFeatures.querySelectorAll(".feature-item")[3];
+
+        pythonDataItem.addEventListener("click", function () {
+
+            window.open(
+                "https://docs.python.org/3/tutorial/datastructures.html",
+                "_blank"
+            );
+
+        });
+
+
+        // CLICK MODULES
+        const pythonModulesItem =
+            skillFeatures.querySelectorAll(".feature-item")[4];
+
+        pythonModulesItem.addEventListener("click", function () {
+
+            window.open(
+                "https://docs.python.org/3/tutorial/modules.html",
+                "_blank"
+            );
+
+        });
+
+
+        // CLICK TKINTER GUI
+        const pythonTkinterItem =
+            skillFeatures.querySelectorAll(".feature-item")[5];
+
+        pythonTkinterItem.addEventListener("click", function () {
+
+            window.open(
+                "https://docs.python.org/3/library/tkinter.html",
+                "_blank"
+            );
+
+        });
+
+    });
+
+
+
+    // ==================================================
+    // POSTGRESQL
+    // ==================================================
+
+    const cardPostgre = document.getElementById("postgre");
+
+    cardPostgre.addEventListener("click", function(){
+
+        // Pindahkan active card
+        skillCards.forEach(card => {
+            card.classList.remove("active");
+        });
+
+        cardPostgre.classList.add("active");
+
+
+        // Ubah isi panel
+        skillTitle.textContent = "PostgreSQL";
+
+        skillSubtitle.textContent =
+            "Relational Database & SQL Development";
+
+        skillDescription.textContent =
+            "PostgreSQL is a powerful open-source relational database " +
+            "system used to store, manage, and query structured data.";
+
+        skillPercentage.textContent = "65%";
+        skillProgress.style.width = "65%";
+        skillLevel.textContent = "PostgreSQL = 65%";
+
+
+        // Core Skills
+        skillFeatures.innerHTML = `
+            <div class="feature-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>SQL Queries</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-table"></i>
+                <span>Tables</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-code-merge"></i>
+                <span>Joins</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Indexes</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                <span>Transactions</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Database</span>
+            </div>
+        `;
+
+
+        // ==================================================
+        // CLICK SQL QUERIES
+        // ==================================================
+
+        const postgresQueryItem =
+            skillFeatures.querySelectorAll(".feature-item")[0];
+
+        postgresQueryItem.addEventListener("click", function () {
+
+            window.open(
+                "https://www.postgresql.org/docs/current/queries.html",
+                "_blank"
+            );
+
+        });
+
+
+        // ==================================================
+        // CLICK TABLES
+        // ==================================================
+
+        const postgresTablesItem =
+            skillFeatures.querySelectorAll(".feature-item")[1];
+
+        postgresTablesItem.addEventListener("click", function () {
+
+            window.open(
+                "https://www.postgresql.org/docs/current/ddl-basics.html",
+                "_blank"
+            );
+
+        });
+
+
+        // ==================================================
+        // CLICK JOINS
+        // ==================================================
+
+        const postgresJoinsItem =
+            skillFeatures.querySelectorAll(".feature-item")[2];
+
+        postgresJoinsItem.addEventListener("click", function () {
+
+            window.open(
+                "https://www.postgresql.org/docs/current/tutorial-join.html",
+                "_blank"
+            );
+
+        });
+
+
+        // ==================================================
+        // CLICK INDEXES
+        // ==================================================
+
+        const postgresIndexesItem =
+            skillFeatures.querySelectorAll(".feature-item")[3];
+
+        postgresIndexesItem.addEventListener("click", function () {
+
+            window.open(
+                "https://www.postgresql.org/docs/current/indexes.html",
+                "_blank"
+            );
+
+        });
+
+
+        // ==================================================
+        // CLICK TRANSACTIONS
+        // ==================================================
+
+        const postgresTransactionsItem =
+            skillFeatures.querySelectorAll(".feature-item")[4];
+
+        postgresTransactionsItem.addEventListener("click", function () {
+
+            window.open(
+                "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+                "_blank"
+            );
+
+        });
+
+
+        // ==================================================
+        // CLICK DATABASE
+        // ==================================================
+
+        const postgresDatabaseItem =
+            skillFeatures.querySelectorAll(".feature-item")[5];
+
+        postgresDatabaseItem.addEventListener("click", function () {
+
+            window.open(
+                "https://www.postgresql.org/docs/current/manage-ag-overview.html",
+                "_blank"
+            );
+
+        });
+
+    });
+
 
 
 
