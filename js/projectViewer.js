@@ -10,9 +10,29 @@ document.getElementById("viewerTitle");
 const viewerClose =
 document.getElementById("viewerClose");
 
+
+
+const reportPreview =
+    document.getElementById("reportPreview");
+
+const modules =
+     document.querySelectorAll(".viewer-modules li");
+
+const moduleList =
+    document.querySelector(".viewer-modules");
+
+
+viewerClose.addEventListener("click",()=>{
+    viewer.classList.remove("active");
+
+});
+
+
+
+// ----------------------- General Ledger --------------------------
+
 const generalLedger =
 document.getElementById("generalLedger");
-
 
 // -------------  G/L   di Klik ---------------
 generalLedger.addEventListener("click",()=>{
@@ -65,25 +85,6 @@ generalLedger.addEventListener("click",()=>{
 });
 
 
-
-
-viewerClose.addEventListener("click",()=>{
-    viewer.classList.remove("active");
-
-});
-
-
-const reportPreview =
-    document.getElementById("reportPreview");
-
-const modules =
-     document.querySelectorAll(".viewer-modules li");
-
-const moduleList =
-    document.querySelector(".viewer-modules");
-
-
-// ----------------------- General Ledger --------------------------
 
 function bindGeneralLedgerModules(){
 
@@ -200,7 +201,6 @@ hrPayroll.addEventListener("click",()=>{
     bindHRModules();
 
 });
-
 
 
 function bindHRModules(){
