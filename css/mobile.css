@@ -26,6 +26,9 @@ GLOBAL
 
 
 
+
+
+
     /*=========================================
     MOON
     =========================================*/
@@ -176,13 +179,30 @@ GLOBAL
         font-size:1.8rem;
     }
 
+
     .project-description{
         grid-column:1 / -1;
     }
 
+    .projects-stage {
+        min-height: auto;
+    }
+
+    .project-preview {
+        width: 100%;
+        height: auto;
+    }
+
+    .preview-track {
+        gap: 0;
+    }
+
+    .preview-slide {
+        height: 220px;   /* sebelumnya 500px */
+    }
 
 
-    
+
     /*=========================================
     PROJECT VIEWER
     =========================================*/
